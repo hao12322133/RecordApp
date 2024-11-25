@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Video Recorder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+  <div class="video-section">
+    <div class="video-container">
+      <video id="previewVideo" autoplay muted playsinline></video>
+    </div>
+  </div>
+  <div class="control-section">
+    <div id="timerDisplay">00:00</div>
+    <div class="controls">
+      <button id="startRecordingButton">Bắt đầu ghi</button>
+      <button id="switchCameraButton">Đổi camera</button>
+      <button id="downloadButton" disabled>Tải về</button>
+      <button id="shareButton" disabled>Chia sẻ</button>
+    </div>
+    <div id="statusMessage"></div>
+  </div>
+</div>
+
+<!-- Import JavaScript -->
+<script type="module" src="recorder.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.11.6/dist/ffmpeg.min.js"></script>
+</body>
+</html>
